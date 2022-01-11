@@ -120,16 +120,14 @@ skaffold delete -p app
 
 ## Accessing the app
 
-To view the users run:
 
-```
-curl -w'\n' 'localhost:8080/demo/all'
-```
 
 To add a user run:
 
 ```
-curl -w'\n' localhost:8080/demo/add \
- -d name=First \
- -d email=someemail@someemailprovider.com
+curl -w'\n'   http://spring-sql-jpa.default.apps.source-lab.io/demo/add  -d name=First  -d email=someemail@someemailprovider.com
+
+
+curl -w'\n'   http://spring-sql-jpa.default.apps.source-lab.io/demo/all
+  
 ```
