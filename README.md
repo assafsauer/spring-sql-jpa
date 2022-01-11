@@ -125,6 +125,8 @@ skaffold delete -p app
 To add a user run:
 
 ```
+tanzu apps workload create spring-sql-jpa --git-repo https://github.com/assafsauer/spring-sql-jpa --git-branch main --type web --label app.kubernetes.io/part-of=spring-sqpl-jpa --yes
+
 curl -w'\n'   http://spring-sql-jpa.default.apps.source-lab.io/demo/add  -d name=First  -d email=someemail@someemailprovider.com
 
 
